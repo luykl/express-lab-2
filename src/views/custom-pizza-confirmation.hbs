@@ -13,9 +13,9 @@
    <section class="main-section">
         <p>Size: {{custom.size}} </p> 
         <p>Toppings: {{custom.toppings}} </p> 
-        <p>Gluten-Free Crust: {{custom.glutenfree}} </p> 
+        <p>Gluten-Free Crust: {{ gf }} </p> 
         <p>Special Instructions: {{custom.instructions}} </p> 
-        <p>Price: {{price}} </p> 
+        <p>Price: {{displayPrice}} </p> 
         {{#if freeDelivery}}
         <p>Becuase your order meets the $15.00 minimum, you get <span class="free">FREE DELIVERY!</span></p>
         {{/if}}

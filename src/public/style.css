@@ -2,6 +2,7 @@ body {
     margin: 0;
     background-image: url("/Milky_way_nebula.jpg");
     height:100%;
+    font-family: sans-serif;
 }
 
 
@@ -73,6 +74,7 @@ img {
 
 a {
     color: inherit;
+
 }
 
 .free {
