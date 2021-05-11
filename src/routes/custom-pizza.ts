@@ -38,6 +38,7 @@ routes.post('/confirmation', (req, res) => {
         freeDelivery = true;
     } 
     
+    
     res.render('custom-pizza-confirmation', { custom, price, freeDelivery });
 });
 

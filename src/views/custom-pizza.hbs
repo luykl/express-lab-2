@@ -4,38 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.typekit.net/ykv5aax.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Express Lab 2</title>
 </head>
 <body>
     <h1>Build Your Own Pizza</h1>
-    <form action="custom-pizza/confirmation" method="POST">
-    <p>
-        <label for="size">Size</label>
-        <select name="size" id="size">
-            <option value="small">small</option>
-            <option value="medium">medium</option>
-            <option value="large">large</option>
-        </select>
-        
-    </p>
-    <p>
-        <label for="toppings">How many toppings?</label>
-        <input type="number" id="toppings" name="toppings">
-    </p>
-    <ul>
-        {{#each toppings}}
-        <li>{{this}}</li>
-        {{/each}}
-    </ul>
-    <p><input type="checkbox"id="glutenfree" name="glutenfree"/><label for="glutenfree">Gluten-Free Crust? ($2.00 extra)</label></p>
-    <p>
-        <label for="instruction">Special Instructions (optional)</label>
-        <input type="text" id="instructions" name="instructions">
-    </p>
-    <p><button type="submit">Calculate Price</button></p>
-           
-    </form>
-    <p><a href="/">Nevermind</a></p>
+    <section class="main-section">
+        <form action="custom-pizza/confirmation" method="POST">
+        <p>
+            <label for="size">Size</label>
+            <select name="size" id="size">
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+            </select>
+            
+        </p>
+        <p>
+            <label for="toppings">How many toppings?</label>
+            <input type="number" id="toppings" name="toppings">
+        </p>
+        <ul>
+            {{#each toppings}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p><input type="checkbox"id="glutenfree" name="glutenfree"/><label for="glutenfree">Gluten-Free Crust? ($2.00 extra)</label></p>
+        <p>
+            <label for="instruction">Special Instructions (optional)</label>
+            <input type="text" id="instructions" name="instructions">
+        </p>
+        <p><button type="submit">Calculate Price</button></p>
+            
+        </form>
+    </section>
+    <p class="nav"><a href="/">Nevermind</a></p>
     
 </body>
 </html>

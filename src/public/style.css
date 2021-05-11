@@ -1,11 +1,83 @@
-/* body {
+body {
     margin: 0;
     background-image: url("/Milky_way_nebula.jpg");
-} */
+    height:100%;
+}
 
 
 h1 {
     font-family: "ethnocentric", sans-serif;
     font-weight: 700;
     font-style: italic;
+    font-size: 3em;
+    margin: 40px;
+    text-align: center;
+    color:white;
 }
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+ul {
+    list-style: none;
+}
+
+.flex-section {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+}
+
+.flex-container {
+    margin: 10px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 90%;
+}
+
+footer {
+    width:100%;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-size:.8em;
+    color: white;
+    
+}
+
+img {
+    max-height: 200px;
+    width: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.nav {
+    color: white;
+    margin: 0 40px;
+}
+
+.main-section {
+    background-color: white;
+    padding: 20px;
+    margin: 40px;
+
+}
+
+a {
+    color: inherit;
+}
+
+.free {
+    color:yellowgreen;
+    font-weight: bold;
+}
+
+
