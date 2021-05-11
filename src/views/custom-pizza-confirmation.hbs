@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Express Lab 2</title>
+</head>
+<body>
+   <h1>Your Pizza</h1>
+   <p>Size: {{custom.size}} </p> 
+   <p>Toppings: {{custom.toppings}} </p> 
+   <p>Gluten-Free Crust: {{custom.glutenfree}} </p> 
+   <p>Special Instructions: {{custom.instructions}} </p> 
+   <p>Price: {{price}} </p> 
+   {{#if freeDelivery}}
+   <p>Becuase your order meets the $15.00 minimum, you get FREE DELIVERY!</p>
+   {{/if}}
+   <p><a href="/custom-pizza">Build another pizza</a></p>
+   <p><a href="/">Back to Homepage</a></p>
+</body>
+</html>
